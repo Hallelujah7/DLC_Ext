@@ -41,6 +41,10 @@ public class Parser {
         System.out.println(animals);
         System.out.println(parts);
 
+        // TODO: Check th file is not empty
+        // TODO: Remove empty lines (have size of 1)
+        // NB: The empty bits are equal to ""
+
         // for (int j = 1; j < content.size(); j++) {
 
         // // Get every row of the file
@@ -202,6 +206,46 @@ public class Parser {
         partSet.remove("bodyparts");
         parts = partSet;
         return partSet;
+    }
+
+    /**
+     * 
+     * @param file
+     * @param animal
+     * @return
+     */
+    private static HashSet<String> getTracks(ArrayList<String> file, int animal) {
+
+        int index = animal * parts.size() * 3 + 1;
+        String[] nameRow = file.get(1).replaceAll("\"", " ").split(",");
+        String name = nameRow[index];
+        Animal newAnimal = new Animal(name);
+        HashMap<String, ArrayList<ArrayList<Double>>> partTracks = new HashMap<String, ArrayList<ArrayList<Double>>>();
+
+        // For every body part labelled for animal at index get the bodyparts and their
+        // coordinates in all the frames
+        for (int i = index; i < index + 13; i = i + 3) {
+            String[] partRow = file.get(2).replaceAll("\"", " ").split(",");
+            String part = partRow[index];
+
+            ArrayList<ArrayList<Double>> partCoordinates = new ArrayList<ArrayList<Double>>();
+
+            // Traverse through the file and get the coordinates for the bodypart at index i
+            for (int j = 4; j < file.size(); j++) {
+                String[] valuesRow = file.get(j).replaceAll("\"", " ").split(",");
+                ArrayList<Double> coordinates = new ArrayList<Double>();
+
+                if (!valuesRow[i].equals("") && !valuesRow[i + 1].equals("")) {
+                    coordinates.add(Double.parseDouble(valuesRow[i]));
+                    coordinates.add(Double.parseDouble(valuesRow[i + 1]));
+                }
+
+                partCoordinates.add(coordinates);
+            }
+
+            newAnimal.records.put(part, partCoordinates);
+        }
+
     }
 
 }
