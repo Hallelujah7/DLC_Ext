@@ -19,7 +19,7 @@ public class Parser {
     public static Set<String> parts = new HashSet<>();
     public static Set<Integer> originYears = new HashSet<>();
     public static Set<Integer> developmentYears = new HashSet<>();
-    public static HashMap<String, Product> allProducts = new HashMap<String, Product>();
+    public static HashMap<String, Animal> allAnimals = new HashMap<String, Animal>();
 
     public Parser(String filename) {
         this.name = filename;
@@ -35,14 +35,33 @@ public class Parser {
         ArrayList<String> content = (ArrayList<String>) Files
                 .readAllLines(Paths.get(System.getProperty("user.dir") + File.separator + filename));
 
-        HashSet<String> nameRow = getAnimals(content.get(1));
-        HashSet<String> partRow = getParts(content.get(2));
+        ArrayList<String[]> rows = new ArrayList<String[]>();
+
+        System.out.println("file size:" + content.size());
+        // Remove empty lines (have size of 1)
+        for (int i = 0; i < content.size(); i++) {
+            String[] row = content.get(i).replaceAll("\"", " ").split(",");
+            if (row.length == 1) {
+                System.out.println("No tracks at frame:" + i);
+            } else {
+                rows.add(row);
+            }
+
+        }
+        // Check the file is not empty
+        if (rows.size() <= 3) {
+            throw new IllegalArgumentException("The file has no tracks");
+        }
+
+        HashSet<String> nameRow = getAnimals(rows.get(1));
+        HashSet<String> partRow = getParts(rows.get(2));
+        Animal animalZero = makeAnimal(rows, 0);
 
         System.out.println(animals);
         System.out.println(parts);
+        System.out.println("file size:" + rows.size());
+        System.out.println(animalZero.records.get("snout"));
 
-        // TODO: Check th file is not empty
-        // TODO: Remove empty lines (have size of 1)
         // NB: The empty bits are equal to ""
 
         // for (int j = 1; j < content.size(); j++) {
@@ -127,20 +146,21 @@ public class Parser {
      * @param payment
      */
 
-    private static void makeProduct(String productName, ArrayList<Integer> yearPairs, double payment) {
+    // private static void makeProduct(String productName, ArrayList<Integer>
+    // yearPairs, double payment) {
 
-        // Create product objects or update their records
-        if (!products.contains(productName)) {
-            Product product = new Product(productName);
-            allProducts.put(productName, product);
-            product.getRecords().put(yearPairs, payment);
-            products.add(productName);
-        } else {
-            allProducts.get(productName).getRecords().put(yearPairs, payment);
-            products.add(productName);
-        }
+    // // Create product objects or update their records
+    // if (!products.contains(productName)) {
+    // Product product = new Product(productName);
+    // allProducts.put(productName, product);
+    // product.getRecords().put(yearPairs, payment);
+    // products.add(productName);
+    // } else {
+    // allProducts.get(productName).getRecords().put(yearPairs, payment);
+    // products.add(productName);
+    // }
 
-    }
+    // }
 
     /**
      * 
@@ -154,8 +174,8 @@ public class Parser {
      * 
      * @return
      */
-    public HashMap<String, Product> getAllProducts() {
-        return allProducts;
+    public HashMap<String, Animal> getAllAnimals() {
+        return allAnimals;
     }
 
     /**
@@ -179,10 +199,9 @@ public class Parser {
      * @param line
      * @return
      */
-    private static HashSet<String> getAnimals(String line) {
+    private static HashSet<String> getAnimals(String[] line) {
 
-        String[] namesRow = line.replaceAll("\"", " ").split(",");
-        List<String> list = Arrays.asList(namesRow);
+        List<String> list = Arrays.asList(line);
         HashSet<String> nameSet = new HashSet<>();
         nameSet.addAll(list);
 
@@ -196,10 +215,9 @@ public class Parser {
      * @param line
      * @return
      */
-    private static HashSet<String> getParts(String line) {
+    private static HashSet<String> getParts(String[] line) {
 
-        String[] partsRow = line.replaceAll("\"", " ").split(",");
-        List<String> list = Arrays.asList(partsRow);
+        List<String> list = Arrays.asList(line);
         HashSet<String> partSet = new HashSet<>();
         partSet.addAll(list);
 
@@ -214,38 +232,40 @@ public class Parser {
      * @param animal
      * @return
      */
-    private static HashSet<String> getTracks(ArrayList<String> file, int animal) {
+    private static Animal makeAnimal(ArrayList<String[]> file, int animal) {
 
-        int index = animal * parts.size() * 3 + 1;
-        String[] nameRow = file.get(1).replaceAll("\"", " ").split(",");
-        String name = nameRow[index];
+        int individualDataSize = parts.size() * 3;
+        int index = animal * individualDataSize + 1;
+
+        String name = file.get(1)[index];
         Animal newAnimal = new Animal(name);
+        allAnimals.put(name, newAnimal);
         HashMap<String, ArrayList<ArrayList<Double>>> partTracks = new HashMap<String, ArrayList<ArrayList<Double>>>();
 
         // For every body part labelled for animal at index get the bodyparts and their
         // coordinates in all the frames
-        for (int i = index; i < index + 13; i = i + 3) {
-            String[] partRow = file.get(2).replaceAll("\"", " ").split(",");
-            String part = partRow[index];
+        for (int i = 0; i < parts.size(); i++) {
 
+            int relativeIndex = index + (3 * i);
+            String part = file.get(2)[relativeIndex];
             ArrayList<ArrayList<Double>> partCoordinates = new ArrayList<ArrayList<Double>>();
 
             // Traverse through the file and get the coordinates for the bodypart at index i
             for (int j = 4; j < file.size(); j++) {
-                String[] valuesRow = file.get(j).replaceAll("\"", " ").split(",");
+                String[] valuesRow = file.get(j);
                 ArrayList<Double> coordinates = new ArrayList<Double>();
 
-                if (!valuesRow[i].equals("") && !valuesRow[i + 1].equals("")) {
-                    coordinates.add(Double.parseDouble(valuesRow[i]));
+                if (!valuesRow[i + 1].equals("") && !valuesRow[i + 2].equals("")) {
                     coordinates.add(Double.parseDouble(valuesRow[i + 1]));
+                    coordinates.add(Double.parseDouble(valuesRow[i + 2]));
+                    partCoordinates.add(coordinates);
                 }
 
-                partCoordinates.add(coordinates);
             }
 
             newAnimal.records.put(part, partCoordinates);
         }
-
+        return newAnimal;
     }
 
 }
