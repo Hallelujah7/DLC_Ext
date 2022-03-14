@@ -45,6 +45,9 @@ public class App {
         Parser parser = new Parser(filename);
         Parser.parse(filename);
 
+        // TODO: Calculate total distance travelled
+        // TODO: Check for all animals
+        // TODO: POSE parameters? Research
         
 
         // System.out.println(filename);

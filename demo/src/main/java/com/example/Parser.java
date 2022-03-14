@@ -60,7 +60,7 @@ public class Parser {
         System.out.println(animals);
         System.out.println(parts);
         System.out.println("file size:" + rows.size());
-        System.out.println(animalZero.records.get("snout"));
+        System.out.println(animalZero.records);
 
         // NB: The empty bits are equal to ""
 
@@ -255,9 +255,9 @@ public class Parser {
                 String[] valuesRow = file.get(j);
                 ArrayList<Double> coordinates = new ArrayList<Double>();
 
-                if (!valuesRow[i + 1].equals("") && !valuesRow[i + 2].equals("")) {
-                    coordinates.add(Double.parseDouble(valuesRow[i + 1]));
-                    coordinates.add(Double.parseDouble(valuesRow[i + 2]));
+                if (!valuesRow[relativeIndex].equals("") && !valuesRow[relativeIndex + 1].equals("")) {
+                    coordinates.add(Double.parseDouble(valuesRow[relativeIndex]));
+                    coordinates.add(Double.parseDouble(valuesRow[relativeIndex + 1]));
                     partCoordinates.add(coordinates);
                 }
 
