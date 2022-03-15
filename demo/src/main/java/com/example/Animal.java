@@ -135,4 +135,57 @@ public class Animal {
 
     }
 
+    /**
+     * 
+     * @param payment
+     */
+
+    public void getDistances() {
+
+        Parser.writeToFile(name + "\n", "Distances_log.txt");
+        String[] parts = Parser.parts.toArray(new String[Parser.parts.size()]);
+        for (int i = 0; i < records.keySet().size(); i++) {
+            ArrayList<ArrayList<Double>> coordinates = records.get(parts[i]);
+            double distance = 0;
+
+            if (coordinates.size() <= 1) {
+                distance = 0;
+                Parser.writeToFile(parts[i] + ":" + distance + "\n", "Distances_log.txt");
+            } else {
+                ArrayList<Double> coordinate = new ArrayList<>();
+                for (int j = 0; j < coordinates.size(); j++) {
+                    if (j == 0) {
+                        coordinate = coordinates.get(j);
+                    } else {
+                        ArrayList<Double> newCoordinate = coordinates.get(j);
+                        double x = coordinate.get(0);
+                        double y = coordinate.get(1);
+                        double xPrime = newCoordinate.get(0);
+                        double yPrime = newCoordinate.get(1);
+                        distance += euclideanDistance(x, y, xPrime, yPrime);
+                        coordinate = newCoordinate;
+                    }
+
+                }
+                Parser.writeToFile(parts[i] + ":" + distance + "\n", "Distances_log.txt");
+            }
+        }
+
+    }
+
+    /**
+     * 
+     * @param x
+     * @param y
+     * @param xPrime
+     * @param yPrime
+     * @return
+     */
+    private double euclideanDistance(double x, double y, double xPrime, double yPrime) {
+
+        double distance = Math.sqrt(Math.pow(x - xPrime, 2) + (Math.pow(y - yPrime, 2)));
+        return distance;
+
+    }
+
 }

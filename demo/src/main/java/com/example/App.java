@@ -44,11 +44,13 @@ public class App {
 
         Parser parser = new Parser(filename);
         Parser.parse(filename);
+        System.out.println(Parser.allAnimals.keySet());
 
         // TODO: Calculate total distance travelled
-        // TODO: Check for all animals
+
+        Animal animal = Parser.allAnimals.get("individual1");
         // TODO: POSE parameters? Research
-        
+        animal.getDistances();
 
         // System.out.println(filename);
         // ArrayList<Integer> sortedOrigin = new
