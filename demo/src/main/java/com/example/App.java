@@ -3,8 +3,6 @@ package com.example;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -46,53 +44,10 @@ public class App {
         Parser.parse(filename);
         System.out.println(Parser.allAnimals.keySet());
 
-        // TODO: Calculate total distance travelled
-
         Animal animal = Parser.allAnimals.get("individual1");
         // TODO: POSE parameters? Research
         animal.getDistances();
 
-        // System.out.println(filename);
-        // ArrayList<Integer> sortedOrigin = new
-        // ArrayList<Integer>(parser.getOriginYears());
-        // ArrayList<Integer> sortedDevelopment = new
-        // ArrayList<Integer>(parser.getDevelopmentYears());
-        // ArrayList<String> productList = new ArrayList<String>(parser.getProducts());
-
-        // Collections.sort(sortedOrigin);
-        // Collections.sort(sortedDevelopment);
-
-        // // Output String instantiation
-        // StringBuilder output = new StringBuilder();
-
-        // // Construct first line of output
-        // // System.out.println(parser.getOriginYears() + ", " +
-        // // sortedDevelopment.size());
-        // output.append(sortedOrigin.get(0) + ", " + sortedDevelopment.size() + "\n");
-
-        // // Construct the output by line per product
-        // for (int i = 0; i < parser.getProducts().size(); i++) {
-        // String product = productList.get(i);
-
-        // // No of development years = last development year - earliest origin year
-        // // No of origin years = final origin year - earliest origin year
-        // int originYear = sortedOrigin.get(0);
-        // int finalYear = sortedOrigin.get(sortedOrigin.size() - 1);
-        // int n = sortedDevelopment.get(sortedDevelopment.size() - 1) - originYear + 1;
-
-        // System.out.println(parser.getAllProducts().get(product).ProductToString(originYear,
-        // finalYear, n));
-        // if (i == parser.getProducts().size() - 1) {
-        // output.append(parser.getAllProducts().get(product).ProductToString(originYear,
-        // finalYear, n));
-        // } else {
-        // output.append(parser.getAllProducts().get(product).ProductToString(originYear,
-        // finalYear, n) + "\n");
-        // }
-
-        // }
-
-        // writeToFile(output.toString());
     }
 
     /**
