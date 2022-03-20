@@ -88,16 +88,24 @@ public class Animal {
                         coordinate = coordinates.get(j);
                     } else {
                         ArrayList<Double> newCoordinate = coordinates.get(j);
+
                         double x = coordinate.get(0);
                         double y = coordinate.get(1);
                         double xPrime = newCoordinate.get(0);
                         double yPrime = newCoordinate.get(1);
-                        distance += euclideanDistance(x, y, xPrime, yPrime);
+                        if (x != -1 && y != -1 && xPrime != -1 && yPrime != -1) {
+                            distance += euclideanDistance(x, y, xPrime, yPrime);
+                        }
                         coordinate = newCoordinate;
                     }
 
+                    if (j != 0 && j % Parser.TIME_BINS == 0) {
+                        Parser.writeToFile(parts[i] + " distance travelled at second " + (j / Parser.TIME_BINS) + ":"
+                                + distance + "\n", "Distances_log.txt");
+                    }
+
                 }
-                Parser.writeToFile(parts[i] + ":" + distance + "\n", "Distances_log.txt");
+                Parser.writeToFile(parts[i] + " total distance:" + distance + "\n", "Output_log.txt");
             }
         }
 

@@ -16,6 +16,8 @@ public class Parser {
 
     public String name;
     public static final int TRACKCUTOFF = 50;
+    public static int TIME_BINS = 25;
+    public static String TIME_UNIT = "second";
     public static Set<String> products = new HashSet<>();
     public static Set<String> animals = new HashSet<>();
     public static Set<String> parts = new HashSet<>();
@@ -41,20 +43,23 @@ public class Parser {
 
         int filesize = content.size();
         System.out.println("file size:" + content.size());
+        int tracks = 0;
         // Remove empty lines (have size of 1)
         for (int i = 0; i < content.size(); i++) {
             String[] row = content.get(i).replaceAll("\"", " ").split(",");
             if (row.length == 1) {
                 writeToFile("No tracks at frame:" + i + "\n", "Track_log.txt");
-                // System.out.println("No tracks at frame:" + i);
+                rows.add(row);
+                // noTrack++;
             } else {
                 rows.add(row);
+                tracks++;
             }
 
         }
 
-        double precentageTracks = rows.size() / filesize;
-        writeToFile("Precentage of frames with tracks: " + precentageTracks, "Track_log.txt");
+        double precentageTracks = ((double) tracks / (double) filesize) * 100;
+        writeToFile("Precentage of frames with tracks: " + precentageTracks + "\n", "Track_log.txt");
 
         if (precentageTracks < TRACKCUTOFF) {
             writeToFile("The tracking rate is below " + TRACKCUTOFF + "% condsider: " + "\n" +
@@ -186,6 +191,11 @@ public class Parser {
                         && !valuesRow[relativeIndex + 1].equals("")) {
                     coordinates.add(Double.parseDouble(valuesRow[relativeIndex]));
                     coordinates.add(Double.parseDouble(valuesRow[relativeIndex + 1]));
+                    partCoordinates.add(coordinates);
+                } else {
+                    // If no track is present then enter default coordinates
+                    coordinates.add((double) -1);
+                    coordinates.add((double) -1);
                     partCoordinates.add(coordinates);
                 }
 

@@ -45,7 +45,10 @@ public class App {
         System.out.println(Parser.allAnimals.keySet());
 
         Animal animal = Parser.allAnimals.get("individual1");
-        // TODO: POSE parameters? Research
+        // TODO: POSE parameters? Research Ethogram How many can I implement 
+        // TODO: Clear files before rewrite? design descision discussion point and print warning on console
+        // TODO: Time bins implementation Done
+        // TODO: 
         animal.getDistances();
 
     }

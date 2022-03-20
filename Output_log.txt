@@ -1,0 +1,4 @@
+tailbase total distance:8.088876877992808
+leftear total distance:1170.0771891799277
+snout total distance:1652.886279314802
+rightear total distance:1216.983365291463
