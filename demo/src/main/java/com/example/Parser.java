@@ -178,7 +178,7 @@ public class Parser {
                 }
             }
 
-            newAnimal.records.put(part, partCoordinates);
+            newAnimal.data.put(part, partCoordinates);
         }
         return newAnimal;
     }
