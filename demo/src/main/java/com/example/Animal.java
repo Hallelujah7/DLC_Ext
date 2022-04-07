@@ -68,8 +68,9 @@ public class Animal {
                     }
 
                     if (j != 0 && j % (Parser.TIME_BINS * 60) == 0) {
-                        Parser.writeToFile((j / Parser.TIME_BINS * 60) + ","
-                                + distance + "\n", "Distances_log.txt");
+                        Parser.writeToFile(
+                           // (j / Parser.TIME_BINS * 60) + "," +
+                                distance + "," + "\n", "Distances_log.txt");
                     }
 
                 }

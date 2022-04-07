@@ -44,9 +44,19 @@ public class App {
         Parser.parse(filename);
         System.out.println(Parser.allAnimals.keySet());
 
-        Animal animal = Parser.allAnimals.get("individual2");
-        animal.getDistances();
-        animal.makeBehaviour("sniffing", "snout", 500);
+        // System.out.println("Enter name of animal to generate distance data for");
+        // Scanner in = new Scanner(System.in);
+        // String animalname = in.nextLine();
+        // in.close();
+
+
+        // if(Parser.animals.contains(animalname)){
+            Animal animal = Parser.allAnimals.get("individual3");
+            animal.getDistances();
+        // }else{
+            // System.out.println("Animal not in file!");
+        // }
+        // animal.makeBehaviour("sniffing", "snout", 500);
 
     }
 
