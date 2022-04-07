@@ -6,7 +6,8 @@ import java.util.HashMap;
 public class Animal {
 
     public String name;
-    public HashMap<String, ArrayList<ArrayList<Double>>> records = new HashMap<String, ArrayList<ArrayList<Double>>>();
+    public HashMap<String, ArrayList<ArrayList<Double>>> data = new HashMap<String, ArrayList<ArrayList<Double>>>();
+    public ArrayList<Behaviour> behaviours = new ArrayList<Behaviour>();
 
     /**
      * 
@@ -28,60 +29,27 @@ public class Animal {
      * 
      * @return
      */
-    public HashMap<String, ArrayList<ArrayList<Double>>> getRecords() {
-        return records;
+    public HashMap<String, ArrayList<ArrayList<Double>>> getdata() {
+        return data;
     }
 
-    /**
-     * Prints int/double values
-     * not at the end of a line
-     * 
-     * @param payment
-     * @return
-     */
 
-    private String isWhole(double payment) {
-
-        if (payment % 1 == 0) {
-            return (" " + (int) (0 + payment) + ",");
-        } else {
-            return (" " + payment + ",");
-        }
-
-    }
-
-    /**
-     * Prints int/double values
-     * at the end of a line
-     * 
-     * @param payment
-     * @return
-     */
-    private String isWholeEnd(double payment) {
-
-        if (payment % 1 == 0) {
-            return (" " + (int) (0 + payment));
-        } else {
-            return (" " + payment);
-        }
-
-    }
-
-    /**
-     * 
-     */
+     /**
+      * 
+      */
     public void getDistances() {
 
         Parser.writeToFile(name + "\n", "Distances_log.txt");
         String[] parts = Parser.parts.toArray(new String[Parser.parts.size()]);
-        for (int i = 0; i < records.keySet().size(); i++) {
-            ArrayList<ArrayList<Double>> coordinates = records.get(parts[i]);
+        for (int i = 0; i < data.keySet().size(); i++) {
+            ArrayList<ArrayList<Double>> coordinates = data.get(parts[i]);
             double distance = 0;
 
             if (coordinates.size() <= 1) {
                 distance = 0;
                 Parser.writeToFile(parts[i] + ":" + distance + "\n", "Distances_log.txt");
             } else {
+                Parser.writeToFile(parts[i] + "\n", "Distances_log.txt");
                 ArrayList<Double> coordinate = new ArrayList<>();
                 for (int j = 0; j < coordinates.size(); j++) {
                     if (j == 0) {
@@ -99,8 +67,8 @@ public class Animal {
                         coordinate = newCoordinate;
                     }
 
-                    if (j != 0 && j % Parser.TIME_BINS == 0) {
-                        Parser.writeToFile(parts[i] + " distance travelled at second " + (j / Parser.TIME_BINS) + ":"
+                    if (j != 0 && j % (Parser.TIME_BINS * 60) == 0) {
+                        Parser.writeToFile((j / Parser.TIME_BINS * 60) + ","
                                 + distance + "\n", "Distances_log.txt");
                     }
 
@@ -109,6 +77,19 @@ public class Animal {
             }
         }
 
+    }
+
+    /**
+     * 
+     * @param name
+     * @param bodypart
+     * @param parameter
+     * @return
+     */
+    public Behaviour makeBehaviour(String name, String bodypart, int parameter) {
+        Behaviour behaviour = new Behaviour(name, bodypart, parameter);
+        behaviours.add(behaviour);
+        return behaviour;
     }
 
     /**

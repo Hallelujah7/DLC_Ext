@@ -1,4 +1,8 @@
-tailbase total distance:8.088876877992808
-leftear total distance:1170.0771891799277
-snout total distance:1652.886279314802
-rightear total distance:1216.983365291463
+tailbase total distance:29952.51350352827
+leftear total distance:178143.4705199799
+snout total distance:205471.9300257983
+rightear total distance:166117.0301126624
+tailbase total distance:29952.51350352827
+leftear total distance:178143.4705199799
+snout total distance:205471.9300257983
+rightear total distance:166117.0301126624

@@ -14,20 +14,21 @@ import java.util.Set;
 
 public class Parser {
 
-    public String name;
+    // public String filename;
     public static final int TRACKCUTOFF = 50;
-    public static int TIME_BINS = 25;
-    public static String TIME_UNIT = "second";
-    public static Set<String> products = new HashSet<>();
+    public static final int TIME_BINS = 25;
+    public static final String TIME_UNIT = "second";
     public static Set<String> animals = new HashSet<>();
     public static Set<String> parts = new HashSet<>();
-    public static Set<Integer> originYears = new HashSet<>();
-    public static Set<Integer> developmentYears = new HashSet<>();
     public static HashMap<String, Animal> allAnimals = new HashMap<String, Animal>();
 
-    public Parser(String filename) {
-        this.name = filename;
-    }
+    // /**
+    //  * 
+    //  * @param filename
+    //  */
+    // public Parser(String filename) {
+    //     this.filename = filename;
+    // }
 
     /**
      * 
@@ -94,33 +95,10 @@ public class Parser {
      * 
      * @return
      */
-    public Set<String> getProducts() {
-        return products;
-    }
-
-    /**
-     * 
-     * @return
-     */
     public HashMap<String, Animal> getAllAnimals() {
         return allAnimals;
     }
 
-    /**
-     * 
-     * @return
-     */
-    public Set<Integer> getOriginYears() {
-        return originYears;
-    }
-
-    /**
-     * 
-     * @return
-     */
-    public Set<Integer> getDevelopmentYears() {
-        return developmentYears;
-    }
 
     /**
      * 
@@ -198,7 +176,6 @@ public class Parser {
                     coordinates.add((double) -1);
                     partCoordinates.add(coordinates);
                 }
-
             }
 
             newAnimal.records.put(part, partCoordinates);

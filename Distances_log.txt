@@ -1,241 +1,242 @@
-individual1
-tailbase distance travelled at second 1:0.0
-tailbase distance travelled at second 2:0.0
-tailbase distance travelled at second 3:0.0
-tailbase distance travelled at second 4:0.0
-tailbase distance travelled at second 5:0.0
-tailbase distance travelled at second 6:0.0
-tailbase distance travelled at second 7:0.0
-tailbase distance travelled at second 8:0.0
-tailbase distance travelled at second 9:0.0
-tailbase distance travelled at second 10:0.0
-tailbase distance travelled at second 11:0.0
-tailbase distance travelled at second 12:0.0
-tailbase distance travelled at second 13:0.0
-tailbase distance travelled at second 14:0.0
-tailbase distance travelled at second 15:0.0
-tailbase distance travelled at second 16:0.0
-tailbase distance travelled at second 17:0.0
-tailbase distance travelled at second 18:0.0
-tailbase distance travelled at second 19:0.0
-tailbase distance travelled at second 20:0.0
-tailbase distance travelled at second 21:0.0
-tailbase distance travelled at second 22:0.0
-tailbase distance travelled at second 23:0.0
-tailbase distance travelled at second 24:0.0
-tailbase distance travelled at second 25:0.0
-tailbase distance travelled at second 26:0.0
-tailbase distance travelled at second 27:0.0
-tailbase distance travelled at second 28:0.0
-tailbase distance travelled at second 29:0.0
-tailbase distance travelled at second 30:0.0
-tailbase distance travelled at second 31:0.0
-tailbase distance travelled at second 32:0.0
-tailbase distance travelled at second 33:0.0
-tailbase distance travelled at second 34:0.0
-tailbase distance travelled at second 35:0.0
-tailbase distance travelled at second 36:0.0
-tailbase distance travelled at second 37:0.0
-tailbase distance travelled at second 38:0.0
-tailbase distance travelled at second 39:0.0
-tailbase distance travelled at second 40:0.0
-tailbase distance travelled at second 41:0.0
-tailbase distance travelled at second 42:0.0
-tailbase distance travelled at second 43:0.0
-tailbase distance travelled at second 44:0.0
-tailbase distance travelled at second 45:0.0
-tailbase distance travelled at second 46:0.0
-tailbase distance travelled at second 47:0.0
-tailbase distance travelled at second 48:0.0
-tailbase distance travelled at second 49:0.0
-tailbase distance travelled at second 50:4.138405053096903
-tailbase distance travelled at second 51:8.088876877992808
-tailbase distance travelled at second 52:8.088876877992808
-tailbase distance travelled at second 53:8.088876877992808
-tailbase distance travelled at second 54:8.088876877992808
-tailbase distance travelled at second 55:8.088876877992808
-tailbase distance travelled at second 56:8.088876877992808
-tailbase distance travelled at second 57:8.088876877992808
-tailbase distance travelled at second 58:8.088876877992808
-tailbase distance travelled at second 59:8.088876877992808
-tailbase distance travelled at second 60:8.088876877992808
-leftear distance travelled at second 1:0.0
-leftear distance travelled at second 2:0.0
-leftear distance travelled at second 3:0.0
-leftear distance travelled at second 4:0.0
-leftear distance travelled at second 5:5.6749075789980035
-leftear distance travelled at second 6:41.870313721889865
-leftear distance travelled at second 7:66.89296482543759
-leftear distance travelled at second 8:83.8784462551766
-leftear distance travelled at second 9:116.64225057305897
-leftear distance travelled at second 10:154.76881104227525
-leftear distance travelled at second 11:154.76881104227525
-leftear distance travelled at second 12:154.76881104227525
-leftear distance travelled at second 13:154.76881104227525
-leftear distance travelled at second 14:154.76881104227525
-leftear distance travelled at second 15:164.08492702020075
-leftear distance travelled at second 16:202.8373970201671
-leftear distance travelled at second 17:224.98000696297828
-leftear distance travelled at second 18:224.98000696297828
-leftear distance travelled at second 19:230.0708860265728
-leftear distance travelled at second 20:367.59296659699794
-leftear distance travelled at second 21:484.8479373328995
-leftear distance travelled at second 22:552.574729882082
-leftear distance travelled at second 23:600.7757120228584
-leftear distance travelled at second 24:600.7757120228584
-leftear distance travelled at second 25:600.7757120228584
-leftear distance travelled at second 26:600.7757120228584
-leftear distance travelled at second 27:600.7757120228584
-leftear distance travelled at second 28:600.7757120228584
-leftear distance travelled at second 29:600.7757120228584
-leftear distance travelled at second 30:600.7757120228584
-leftear distance travelled at second 31:600.7757120228584
-leftear distance travelled at second 32:639.3723336615326
-leftear distance travelled at second 33:639.3723336615326
-leftear distance travelled at second 34:639.3723336615326
-leftear distance travelled at second 35:639.3723336615326
-leftear distance travelled at second 36:647.3140398384193
-leftear distance travelled at second 37:647.3140398384193
-leftear distance travelled at second 38:648.7221978551205
-leftear distance travelled at second 39:656.2042251873346
-leftear distance travelled at second 40:658.9013571826214
-leftear distance travelled at second 41:675.4994080949594
-leftear distance travelled at second 42:825.1759950919965
-leftear distance travelled at second 43:845.7731924797799
-leftear distance travelled at second 44:845.7731924797799
-leftear distance travelled at second 45:866.4322123279061
-leftear distance travelled at second 46:908.8330595172728
-leftear distance travelled at second 47:952.10685664219
-leftear distance travelled at second 48:994.1989983612473
-leftear distance travelled at second 49:1055.507532744666
-leftear distance travelled at second 50:1154.29113875463
-leftear distance travelled at second 51:1158.0253839532218
-leftear distance travelled at second 52:1158.0253839532218
-leftear distance travelled at second 53:1158.0253839532218
-leftear distance travelled at second 54:1158.0253839532218
-leftear distance travelled at second 55:1161.4892992960845
-leftear distance travelled at second 56:1161.4892992960845
-leftear distance travelled at second 57:1161.4892992960845
-leftear distance travelled at second 58:1168.2533182197717
-leftear distance travelled at second 59:1168.2533182197717
-leftear distance travelled at second 60:1170.0771891799277
-snout distance travelled at second 1:0.0
-snout distance travelled at second 2:0.0
-snout distance travelled at second 3:0.0
-snout distance travelled at second 4:0.0
-snout distance travelled at second 5:42.67301032946892
-snout distance travelled at second 6:94.05330741699026
-snout distance travelled at second 7:119.89495857916334
-snout distance travelled at second 8:148.5507807659886
-snout distance travelled at second 9:190.7435372384382
-snout distance travelled at second 10:225.09413153707484
-snout distance travelled at second 11:225.09413153707484
-snout distance travelled at second 12:225.09413153707484
-snout distance travelled at second 13:225.09413153707484
-snout distance travelled at second 14:225.09413153707484
-snout distance travelled at second 15:264.8288980881369
-snout distance travelled at second 16:302.97113280984905
-snout distance travelled at second 17:316.1276555392293
-snout distance travelled at second 18:316.1276555392293
-snout distance travelled at second 19:324.9697788664537
-snout distance travelled at second 20:508.4054619729082
-snout distance travelled at second 21:694.6213845108941
-snout distance travelled at second 22:811.2514036354746
-snout distance travelled at second 23:855.5973900337881
-snout distance travelled at second 24:855.5973900337881
-snout distance travelled at second 25:855.5973900337881
-snout distance travelled at second 26:855.5973900337881
-snout distance travelled at second 27:855.5973900337881
-snout distance travelled at second 28:855.5973900337881
-snout distance travelled at second 29:855.5973900337881
-snout distance travelled at second 30:855.5973900337881
-snout distance travelled at second 31:855.5973900337881
-snout distance travelled at second 32:907.105290697258
-snout distance travelled at second 33:907.105290697258
-snout distance travelled at second 34:907.105290697258
-snout distance travelled at second 35:907.105290697258
-snout distance travelled at second 36:921.6353908345593
-snout distance travelled at second 37:921.6353908345593
-snout distance travelled at second 38:922.219241842951
-snout distance travelled at second 39:945.0872423895663
-snout distance travelled at second 40:954.3673359774565
-snout distance travelled at second 41:972.9932009769317
-snout distance travelled at second 42:1097.7016754642268
-snout distance travelled at second 43:1114.3312883447393
-snout distance travelled at second 44:1114.3312883447393
-snout distance travelled at second 45:1134.9151983630813
-snout distance travelled at second 46:1161.9318010582565
-snout distance travelled at second 47:1181.5178580448194
-snout distance travelled at second 48:1224.8552514617031
-snout distance travelled at second 49:1380.22630465125
-snout distance travelled at second 50:1622.2684408970756
-snout distance travelled at second 51:1631.7440671828058
-snout distance travelled at second 52:1631.7440671828058
-snout distance travelled at second 53:1631.7440671828058
-snout distance travelled at second 54:1631.7440671828058
-snout distance travelled at second 55:1636.6397800763139
-snout distance travelled at second 56:1636.6397800763139
-snout distance travelled at second 57:1636.6397800763139
-snout distance travelled at second 58:1639.212425601838
-snout distance travelled at second 59:1639.212425601838
-snout distance travelled at second 60:1652.886279314802
-rightear distance travelled at second 1:0.0
-rightear distance travelled at second 2:0.0
-rightear distance travelled at second 3:0.0
-rightear distance travelled at second 4:0.0
-rightear distance travelled at second 5:15.098668069457254
-rightear distance travelled at second 6:57.572081656330816
-rightear distance travelled at second 7:77.26229333883741
-rightear distance travelled at second 8:100.12632035950199
-rightear distance travelled at second 9:131.60080893613477
-rightear distance travelled at second 10:178.38766985640962
-rightear distance travelled at second 11:178.38766985640962
-rightear distance travelled at second 12:178.38766985640962
-rightear distance travelled at second 13:178.38766985640962
-rightear distance travelled at second 14:178.38766985640962
-rightear distance travelled at second 15:204.36844375435888
-rightear distance travelled at second 16:254.14147594885185
-rightear distance travelled at second 17:271.1863219295152
-rightear distance travelled at second 18:271.1863219295152
-rightear distance travelled at second 19:306.56146709362264
-rightear distance travelled at second 20:471.908730964296
-rightear distance travelled at second 21:610.043447602713
-rightear distance travelled at second 22:634.0559361243135
-rightear distance travelled at second 23:690.3114891409634
-rightear distance travelled at second 24:690.3114891409634
-rightear distance travelled at second 25:690.3114891409634
-rightear distance travelled at second 26:690.3114891409634
-rightear distance travelled at second 27:690.3114891409634
-rightear distance travelled at second 28:690.3114891409634
-rightear distance travelled at second 29:690.3114891409634
-rightear distance travelled at second 30:690.3114891409634
-rightear distance travelled at second 31:690.3114891409634
-rightear distance travelled at second 32:738.095519536624
-rightear distance travelled at second 33:738.095519536624
-rightear distance travelled at second 34:738.095519536624
-rightear distance travelled at second 35:738.095519536624
-rightear distance travelled at second 36:739.5652899268551
-rightear distance travelled at second 37:739.5652899268551
-rightear distance travelled at second 38:741.1384809514926
-rightear distance travelled at second 39:753.3666419334228
-rightear distance travelled at second 40:759.2234466083287
-rightear distance travelled at second 41:777.822330808362
-rightear distance travelled at second 42:937.4931026882357
-rightear distance travelled at second 43:963.1977878376294
-rightear distance travelled at second 44:963.1977878376294
-rightear distance travelled at second 45:993.187363623125
-rightear distance travelled at second 46:1041.4014295238005
-rightear distance travelled at second 47:1079.0699179573949
-rightear distance travelled at second 48:1138.1817547065064
-rightear distance travelled at second 49:1178.5706197348645
-rightear distance travelled at second 50:1193.5274577638827
-rightear distance travelled at second 51:1200.44485190434
-rightear distance travelled at second 52:1200.44485190434
-rightear distance travelled at second 53:1200.44485190434
-rightear distance travelled at second 54:1200.44485190434
-rightear distance travelled at second 55:1207.4111007630179
-rightear distance travelled at second 56:1207.4111007630179
-rightear distance travelled at second 57:1207.4111007630179
-rightear distance travelled at second 58:1207.7739919312764
-rightear distance travelled at second 59:1207.7739919312764
-rightear distance travelled at second 60:1216.983365291463
+individual2
+tailbase
+3600,2330.0057007272744
+7200,3042.617225737898
+10800,3099.493123441799
+14400,3213.9097685022275
+18000,4295.846890797177
+21600,4471.0207699879265
+25200,4511.814503486419
+28800,5834.288394995449
+32400,7488.688323989117
+36000,7523.085668353549
+39600,7552.540567040873
+43200,8022.456256982802
+46800,8330.819334745527
+50400,9029.684751910794
+54000,10214.000417627529
+57600,10244.416292109197
+61200,10678.674283352562
+64800,14720.48397208229
+68400,17545.279252027805
+72000,19043.705766548013
+75600,21156.89308333556
+79200,21915.846849066394
+82800,22762.91220445859
+86400,22942.03226699259
+90000,24316.045003766125
+93600,24730.976058457443
+97200,28303.702205786143
+100800,28680.039021680557
+104400,28732.047458232617
+leftear
+3600,20266.913803403182
+7200,24916.733042987773
+10800,26211.39053892375
+14400,26765.314173494975
+18000,30457.042213061715
+21600,31603.106492663428
+25200,34109.977910284586
+28800,36698.73094071593
+32400,41319.331184830895
+36000,42424.81134212493
+39600,45267.698572260815
+43200,49305.82826889104
+46800,52070.72813977728
+50400,53716.52488863418
+54000,62470.84511926182
+57600,63763.1285394551
+61200,68138.77492281195
+64800,86371.39968204839
+68400,94462.11816140256
+72000,99391.57909010646
+75600,111943.32679474089
+79200,118264.19102204168
+82800,126254.11710959411
+86400,132116.41674309803
+90000,141310.7196011221
+93600,148423.7903065027
+97200,158473.4226856368
+100800,166923.5492165948
+104400,171625.22727944702
+snout
+3600,22386.242518353636
+7200,28023.084593514865
+10800,28622.128229259157
+14400,29391.7059271561
+18000,34000.156802632235
+21600,35642.796620682166
+25200,37961.38388878244
+28800,40778.70084372838
+32400,46449.41026624371
+36000,47661.19402493071
+39600,53065.28360155934
+43200,57944.0311042656
+46800,61965.00446049829
+50400,63774.2175849573
+54000,75605.10720086603
+57600,77009.62294243184
+61200,81841.39669497083
+64800,102456.11093286234
+68400,110055.58994692404
+72000,115614.24709850781
+75600,131005.81306222847
+79200,137533.5101627725
+82800,145728.51399278108
+86400,152240.97570561324
+90000,161487.07934336824
+93600,169002.55240714087
+97200,181276.97391275046
+100800,192513.95842812487
+104400,198570.200384318
+rightear
+3600,19002.5614818138
+7200,23537.059986822736
+10800,24767.275803052427
+14400,25237.26405628466
+18000,29622.91181095361
+21600,30463.858481519746
+25200,32567.850228991476
+28800,35187.775289079014
+32400,39747.441518810985
+36000,40635.78252793526
+39600,44901.21804007584
+43200,48277.326362506945
+46800,50919.24717952336
+50400,52117.04261682536
+54000,60986.25796634309
+57600,62392.624092804384
+61200,65941.38789451576
+64800,84294.06231576116
+68400,90665.2898264814
+72000,95114.19319953625
+75600,107697.2727841231
+79200,113012.25387957635
+82800,120160.91095472938
+86400,124790.79745830664
+90000,131929.99623445323
+93600,137948.60734113213
+97200,148371.69611031996
+100800,156549.81067652258
+104400,160566.187552651
+individual2
+tailbase
+3600,2330.0057007272744
+7200,3042.617225737898
+10800,3099.493123441799
+14400,3213.9097685022275
+18000,4295.846890797177
+21600,4471.0207699879265
+25200,4511.814503486419
+28800,5834.288394995449
+32400,7488.688323989117
+36000,7523.085668353549
+39600,7552.540567040873
+43200,8022.456256982802
+46800,8330.819334745527
+50400,9029.684751910794
+54000,10214.000417627529
+57600,10244.416292109197
+61200,10678.674283352562
+64800,14720.48397208229
+68400,17545.279252027805
+72000,19043.705766548013
+75600,21156.89308333556
+79200,21915.846849066394
+82800,22762.91220445859
+86400,22942.03226699259
+90000,24316.045003766125
+93600,24730.976058457443
+97200,28303.702205786143
+100800,28680.039021680557
+104400,28732.047458232617
+leftear
+3600,20266.913803403182
+7200,24916.733042987773
+10800,26211.39053892375
+14400,26765.314173494975
+18000,30457.042213061715
+21600,31603.106492663428
+25200,34109.977910284586
+28800,36698.73094071593
+32400,41319.331184830895
+36000,42424.81134212493
+39600,45267.698572260815
+43200,49305.82826889104
+46800,52070.72813977728
+50400,53716.52488863418
+54000,62470.84511926182
+57600,63763.1285394551
+61200,68138.77492281195
+64800,86371.39968204839
+68400,94462.11816140256
+72000,99391.57909010646
+75600,111943.32679474089
+79200,118264.19102204168
+82800,126254.11710959411
+86400,132116.41674309803
+90000,141310.7196011221
+93600,148423.7903065027
+97200,158473.4226856368
+100800,166923.5492165948
+104400,171625.22727944702
+snout
+3600,22386.242518353636
+7200,28023.084593514865
+10800,28622.128229259157
+14400,29391.7059271561
+18000,34000.156802632235
+21600,35642.796620682166
+25200,37961.38388878244
+28800,40778.70084372838
+32400,46449.41026624371
+36000,47661.19402493071
+39600,53065.28360155934
+43200,57944.0311042656
+46800,61965.00446049829
+50400,63774.2175849573
+54000,75605.10720086603
+57600,77009.62294243184
+61200,81841.39669497083
+64800,102456.11093286234
+68400,110055.58994692404
+72000,115614.24709850781
+75600,131005.81306222847
+79200,137533.5101627725
+82800,145728.51399278108
+86400,152240.97570561324
+90000,161487.07934336824
+93600,169002.55240714087
+97200,181276.97391275046
+100800,192513.95842812487
+104400,198570.200384318
+rightear
+3600,19002.5614818138
+7200,23537.059986822736
+10800,24767.275803052427
+14400,25237.26405628466
+18000,29622.91181095361
+21600,30463.858481519746
+25200,32567.850228991476
+28800,35187.775289079014
+32400,39747.441518810985
+36000,40635.78252793526
+39600,44901.21804007584
+43200,48277.326362506945
+46800,50919.24717952336
+50400,52117.04261682536
+54000,60986.25796634309
+57600,62392.624092804384
+61200,65941.38789451576
+64800,84294.06231576116
+68400,90665.2898264814
+72000,95114.19319953625
+75600,107697.2727841231
+79200,113012.25387957635
+82800,120160.91095472938
+86400,124790.79745830664
+90000,131929.99623445323
+93600,137948.60734113213
+97200,148371.69611031996
+100800,156549.81067652258
+104400,160566.187552651

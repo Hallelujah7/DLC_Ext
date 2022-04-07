@@ -28,7 +28,7 @@ public class App {
         }
 
         // Get cumulative data output file
-        cumulativeData(filename);
+        Start(filename);
 
     }
 
@@ -38,18 +38,15 @@ public class App {
      * @throws IOException
      */
 
-    public static void cumulativeData(String filename) throws IOException {
+    public static void Start(String filename) throws IOException {
 
-        Parser parser = new Parser(filename);
+        // Parser parser = new Parser(filename);
         Parser.parse(filename);
         System.out.println(Parser.allAnimals.keySet());
 
-        Animal animal = Parser.allAnimals.get("individual1");
-        // TODO: POSE parameters? Research Ethogram How many can I implement 
-        // TODO: Clear files before rewrite? design descision discussion point and print warning on console
-        // TODO: Time bins implementation Done
-        // TODO: 
+        Animal animal = Parser.allAnimals.get("individual2");
         animal.getDistances();
+        animal.makeBehaviour("sniffing", "snout", 500);
 
     }
 
