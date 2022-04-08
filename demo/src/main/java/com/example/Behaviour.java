@@ -2,17 +2,14 @@ package com.example;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
 
 public class Behaviour {
 
     public  String name;
     public  String bodyPart;
-    public  int parameter;
+    public  double parameter;
     public  String sniffingLabel = "HeadSniffing"; // Nose2Nose (Head Sniffing) The nose of the mouse under
-     public ArrayList<Integer>  frames = new ArrayList<>();                                                // analysis points towards the nose of a
+     public ArrayList<Integer>  frames = new ArrayList<>(); // analysis points towards the nose of a
                                                          // conspecific at a distance of less than 0.5 cm or directly
                                                          // touches it.
 
@@ -22,7 +19,7 @@ public class Behaviour {
      * @param bodyPart
      * @param parameter
      */
-    public Behaviour(String name, String bodyPart, int parameter){
+    public Behaviour(String name, String bodyPart, double parameter){
         this.name = name;
         this.bodyPart = bodyPart;
         this.parameter = parameter;
@@ -37,16 +34,15 @@ public class Behaviour {
      */
     public static void main(String[] args) throws IOException {
 
-        // TODO implement define animal function and generate data for 1 behaviour
-        // System.out.println("Enter name of behaviour to generate data for:");
-        // Scanner nameInput = new Scanner(System.in);
-        // name = nameInput.nextLine();
-        // nameInput.close();
-        // isBehaviour(name, bodyPart, parameter);
-
     }
 
-    public void isBehaviour(String behaviour, String bodyPart, int distance_cutoff) {
+    /**
+     * 
+     * @param behaviour
+     * @param bodyPart
+     * @param distance_cutoff
+     */
+    public void isBehaviour(String behaviour, String bodyPart, double distance_cutoff) {
 
         ArrayList<Integer> behaviourFrames = new ArrayList<>();
 

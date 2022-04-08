@@ -18,9 +18,15 @@ public class App {
      */
     public static void main(String[] args) throws IOException {
 
+        System.out.println("Insert name of file:");
         Scanner in = new Scanner(System.in);
         String filename = in.nextLine();
+        System.out.println("Enter name of animal to generate distance data for:");
+        String animalName = in.nextLine();
+        System.out.println("Behaviour name, body parts it's determined by and the distance parameter separated by commas:");
+        String[] behaviour = in.nextLine().split(",");
         in.close();
+
 
         // Check format
         if (!filename.endsWith(".csv")) {
@@ -28,7 +34,7 @@ public class App {
         }
 
         // Get cumulative data output file
-        Start(filename);
+        Start(filename, animalName, behaviour);
 
     }
 
@@ -38,25 +44,19 @@ public class App {
      * @throws IOException
      */
 
-    public static void Start(String filename) throws IOException {
+    public static void Start(String filename, String individual, String[] behaviour) throws IOException {
 
-        // Parser parser = new Parser(filename);
         Parser.parse(filename);
         System.out.println(Parser.allAnimals.keySet());
 
-        // System.out.println("Enter name of animal to generate distance data for");
-        // Scanner in = new Scanner(System.in);
-        // String animalname = in.nextLine();
-        // in.close();
-
-
-        // if(Parser.animals.contains(animalname)){
-            Animal animal = Parser.allAnimals.get("individual3");
+        if(Parser.animals.contains(individual)){
+            Animal animal = Parser.allAnimals.get(individual);
             animal.getDistances();
-        // }else{
-            // System.out.println("Animal not in file!");
-        // }
-        // animal.makeBehaviour("sniffing", "snout", 500);
+            animal.makeBehaviour(behaviour[0], behaviour[1], Double.parseDouble(behaviour[2]));
+        }else{
+            System.out.println("Animal not in file!");
+        }
+        
 
     }
 

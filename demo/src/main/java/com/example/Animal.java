@@ -87,7 +87,7 @@ public class Animal {
      * @param parameter
      * @return
      */
-    public Behaviour makeBehaviour(String name, String bodypart, int parameter) {
+    public Behaviour makeBehaviour(String name, String bodypart, double parameter) {
         Behaviour behaviour = new Behaviour(name, bodypart, parameter);
         behaviours.add(behaviour);
         return behaviour;

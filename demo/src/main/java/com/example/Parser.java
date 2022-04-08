@@ -14,7 +14,6 @@ import java.util.Set;
 
 public class Parser {
 
-    // public String filename;
     public static final int TRACKCUTOFF = 50;
     public static final int TIME_BINS = 25;
     public static final String TIME_UNIT = "second";
@@ -22,13 +21,6 @@ public class Parser {
     public static Set<String> parts = new HashSet<>();
     public static HashMap<String, Animal> allAnimals = new HashMap<String, Animal>();
 
-    // /**
-    //  * 
-    //  * @param filename
-    //  */
-    // public Parser(String filename) {
-    //     this.filename = filename;
-    // }
 
     /**
      * 
@@ -76,13 +68,11 @@ public class Parser {
 
         System.out.println(Arrays.toString(rows.get(4)));
 
-        HashSet<String> nameRow = getAnimals(rows.get(1));
-        HashSet<String> partRow = getParts(rows.get(2));
 
         // Create all the animal instances
         for (int i = 0; i < animals.size(); i++) {
             System.out.println(i);
-            Animal animal = makeAnimal(rows, i);
+            // Animal animal = makeAnimal(rows, i);
         }
 
         System.out.println(animals);
